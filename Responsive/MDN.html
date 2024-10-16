@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=rss_feed" />
+<title>Document</title>
+<style>
+@media screen and (max-width:1000px) {
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: "Arima", system-ui;
+		list-style: none;
+		text-decoration: none;
+}
+body::-webkit-scrollbar{
+background-color: #F1F1F1;
+}
+body::-webkit-scrollbar-thumb{
+background-color: #C1C1C1;
+}
+nav{
+width: 100%;
+height: 45px;
+background-color: #1B1B1B;
+position: fixed;
+z-index: 111;
+}
+
+/* ShowAndUpDiv */
+/* SHOWANDUPDIV */
+.Openside{
+font-size: 22px;
+position: fixed;
+top: 5px;
+right: 7px;
+background-color: #1B1B1B;
+padding: 1px 5px 2px 5px;
+border-radius: 4px;
+z-index: 100;
+		
+}
+.Openside:hover{
+	background-color: #858585;
+}
+.sideBar{
+		font-size: 22px;
+		position: fixed;
+		top: 5px;
+		right: 7px;
+		background-color: #1B1B1B;
+		padding: 1px 5px 2px 5px;
+		border-radius: 4px;
+}
+.sideBar:hover{
+	background-color: #858585;
+}
+.SidebarMenu{
+		height: 100%;
+		width: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #1B1B1B;
+		overflow-x: hidden;
+		padding-top: 60px;
+		margin-top: 40px;
+}
+.SidebarMenu a{
+		display: block;
+		transition: 0.3s;
+}
+.SidebarMenu.sideBar{
+		position: absolute;
+}
+#SideMenu.active{
+		width: 100%;
+}
+#OpenSideMenu{
+		display: block;
+}
+#OpenSideMenu.hide{
+		display: none;
+}
+nav ul{
+		padding: 0;
+		margin: 0;
+}
+nav a{
+		text-decoration: none;
+		color: #ffffff;
+}
+.sideBar{
+		font-size: 22px;
+		float: right;
+}
+.Openside{
+		color: white;
+		/* position: fixed; */
+		float: right;
+}
+
+/* drop and down */
+/* DROP AND DOWN */
+.ShowAndUpDiv{
+width: 100%;
+height: fit-content;
+margin-top: -60px;
+padding-left: 10px;
+padding-top: 10px;
+}
+.hupe_mune{
+width: 100px;
+height: 30px;
+}
+.arrow{
+border: solid black;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 3px;
+transform: rotate(45deg);
+transition: transform 0.3s;
+}
+.arrow.hide {
+transform: rotate(-135deg);
+}
+.menu_list{
+display: none;
+}
+.menu_list.show{
+display: block;
+}
+
+/* log in and button */
+/* LOG IN AND BUTTON */
+.loginAndButton{
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: flex;
+justify-content: center;
+
+}
+.loginAndButton a{
+display: inline-block;
+padding: 5px 5px;
+}
+.loginAndButton button{
+padding: 5px 25px;
+font-family: "Arima", system-ui;
+}
+
+/* search bar */
+/* SEARCH BAR */
+.searchBar{
+width: 100%;
+height: fit-content;
+margin-top: 5px;
+/* background-color: red; */
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+}
+.searchBar input{
+position: relative;
+width: 320px;
+height: 35px;
+background-color: #1B1B1B;
+padding-left: 15px;
+padding-right: 30px;
+outline: none;
+border-radius: 50px;
+border: 1px solid #858585;
+color: white;
+font-family: "Arima", system-ui;
+font-size: 16px;
+}
+.searchBar input::placeholder{
+	font-size: 26px;
+	font-weight: 900;
+	color: rgb(99, 130, 231);
+}
+.searchBar .ri-search-line{
+width: fit-content;
+height: fit-content;
+border-radius: 4px;
+padding: 4px;
+position:relative;
+top: 4px;
+right: 30px;
+cursor: pointer;
+color:#858585;
+margin-right: -50px;
+}
+.searchBar .ri-search-line:hover{
+	background-color: #707070;
+}
+
+/* Rererences-Button */
+/* REFERENCES-BUTTON */
+.Rererences_Button{
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: block;
+padding-left: 10px;
+/* margin: 0 auto; */
+}
+.dropAndDown{
+background-color: #1B1B1B;
+width: 96%;
+height: fit-content;
+color: white;
+display: inline-block;
+font-size: 18px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #696969;
+border-top: 1px solid #696969;
+border-left: none;
+border-right:none;
+display: flex;
+justify-content: start;
+}
+.List_menu{
+width: 95%;
+height: fit-content;
+/* background-color: red; */
+margin: 0 auto;
+}
+.List_menu a{
+margin-top: 7px;
+padding-left: 15px;
+}
+.List_menu .Overview{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .Overview:hover{
+background-color: #696969;
+}
+.List_menu .Overview::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #F2F2F2;
+}
+.List_menu .HTML{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .HTML::after{
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 2px;
+height: 100%;
+background-color:#F06978 ;
+}
+.List_menu .HTML:hover{
+background-color: #696969;
+}
+.List_menu .CSS{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .CSS::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #83A8EE;
+}
+.List_menu .CSS:hover{
+background-color: #696969;
+}
+.List_menu .JavaScript{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .JavaScript::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #A49700;
+}
+.List_menu .JavaScript:hover{
+background-color: #696969;
+}
+.List_menu .HTTP{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .HTTP::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color:#00A94E ;
+}
+.List_menu .HTTP:hover{
+background-color: #696969;
+}
+.List_menu .Web_APls{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .Web_APls::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color:#969696;
+}
+.List_menu .Web_APls:hover{
+background-color: #696969;
+}
+.List_menu .Web_Wxtensions{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu .Web_Wxtensions::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #F6F6F6;
+}
+.List_menu .Web_Wxtensions:hover{
+background-color: #696969;
+}
+.floot_right{
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: end;
+margin-top: 4px;
+}
+.chid_arrow{
+border: solid white;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 3px;
+transform: rotate(45deg);
+transition: transform 0.3s;
+margin-left: 78%;
+margin-top: 2px;
+}
+.chid_arrow.ChidUp {
+transform: rotate(-135deg);
+}
+#List_menu{
+display: none;
+}
+#List_menu.ChidShow{
+display: block;
+}
+
+/* Rererences-Button Second Line */
+/* REFERENCES-BUTTON SECOND LINE */
+.Rererences_Button1{
+	width: 100%;
+	height: fit-content;
+	/* background-color: rgb(149, 255, 0); */
+	display: block;
+	padding-left: 10px;
+	/* margin: 0 auto; */
+}
+.dropAndDown1{
+background-color: #1B1B1B;
+width: 96%;
+height: fit-content;
+color: white;
+display: inline-block;
+font-size: 18px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #696969;
+border-top: none;
+border-left: none;
+border-right:none;
+display: flex;
+justify-content: start;
+}
+.List_menu1{
+width: 95%;
+height: fit-content;
+/* background-color: red; */
+margin: 0 auto;
+}
+.List_menu1 a{
+margin-top: 7px;
+padding-left: 15px;
+}
+.List_menu1 .Overview1{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu1 .Overview1:hover{
+	background-color: #696969;
+}
+.List_menu1 .Overview1::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color:#F06978;
+}
+.List_menu1 .HTML1{
+	position: relative;
+	padding: 7px 7px 7px 7px;
+}
+.List_menu1 .HTML1::after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2px;
+	height: 100%;
+	background-color:#F06978;
+}
+.List_menu1 .HTML1:hover{
+	background-color: #696969;
+}
+.List_menu1 .CSS1{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu1 .CSS1::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #83A8EE;
+}
+.List_menu1 .CSS1:hover{
+	background-color: #696969;
+}
+.List_menu1 .JavaScript1{
+	position: relative;
+	padding: 7px 7px 7px 7px;
+}
+.List_menu1 .JavaScript1::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color: #A49700;
+}
+.List_menu1 .JavaScript1:hover{
+	background-color: #696969;
+}
+.List_menu1 .HTTP1{
+	position: relative;
+	padding: 7px 7px 7px 7px;
+}
+.List_menu1 .HTTP1::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color:#00A94E ;
+}
+.List_menu1 .HTTP1:hover{
+	background-color: #696969;
+}
+.List_menu1 .Web_APls1{
+	position: relative;
+	padding: 7px 7px 7px 7px;
+}
+.List_menu1 .Web_APls1::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color:#969696;
+}
+.List_menu1.Web_APls1:hover{
+	background-color: #696969;
+}
+.List_menu1 .Web_Wxtensions1{
+	position: relative;
+	padding: 7px 7px 7px 7px;
+}
+.List_menu1 .Web_Wxtensions1::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color: #F6F6F6;
+}
+.List_menu1 .Web_Wxtensions1:hover{
+	background-color: #696969;
+}
+.floot_right1{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: end;
+	margin-top: 4px;
+}
+.chid_arrow1{
+border: solid white;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 3px;
+transform: rotate(45deg);
+transition: transform 0.3s;
+margin-top: 2px; 
+}
+.chid_arrow1.ChidUp1 {
+transform: rotate(-135deg);
+}
+#List_menu1{
+	display: none;
+}
+#List_menu1.ChidShow1{
+	display: block;
+}
+
+/* Rererences-Button Thirt Line */
+/* REFERENCES-BUTTON THIRT LINE */
+.Rererences_Button2{
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: block;
+padding-left: 10px;
+/* margin: 0 auto; */
+}
+.dropAndDown2{
+background-color: #1B1B1B;
+width: 96%;
+height: fit-content;
+color: white;
+display: inline-block;
+font-size: 18px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #696969;
+border-top: none;
+border-left: none;
+border-right:none;
+display: flex;
+justify-content: start;
+}
+.List_menu2{
+width: 95%;
+height: fit-content;
+/* background-color: red; */
+margin: 0 auto;
+}
+.List_menu2 a{
+margin-top: 7px;
+padding-left: 15px;
+}
+.List_menu2 .Overview2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .Overview2:hover{
+background-color: #696969;
+}
+.List_menu2 .Overview2::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .HTML2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .HTML2::after{
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .HTML2:hover{
+background-color: #696969;
+}
+.List_menu2 .CSS2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .CSS2::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .CSS2:hover{
+background-color: #696969;
+}
+.List_menu2 .JavaScript2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .JavaScript2::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .JavaScript2:hover{
+background-color: #696969;
+}
+.List_menu2 .HTTP2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .HTTP2::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .HTTP2:hover{
+background-color: #696969;
+}
+.List_menu2 .Web_APls2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .Web_APls2::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .Web_APls2:hover{
+background-color: #696969;
+}
+.List_menu2 .Web_Wxtensions2{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu2 .Web_Wxtensions2::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #E4878F;
+}
+.List_menu2 .Web_Wxtensions2:hover{
+background-color: #696969;
+}
+.floot_right2{
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: end;
+margin-top: 4px;
+}
+.chid_arrow2{
+border: solid white;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 3px;
+transform: rotate(45deg);
+transition: transform 0.3s;
+margin-left: 78%;
+margin-top: 2px;
+}
+.chid_arrow2.ChidUp2 {
+transform: rotate(-135deg);
+}
+#List_menu2{
+display: none;
+}
+#List_menu2.ChidShow2{
+display: block;
+}
+
+/* Rererences-Button Fourth Line */
+/* REFERENCES-BUTTON FOURTH LINE */
+.Rererences_Button3{
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: block;
+padding-left: 10px;
+/* margin: 0 auto; */
+}
+.dropAndDown3{
+background-color: #1B1B1B;
+width: 96%;
+height: fit-content;
+color: white;
+display: inline-block;
+font-size: 18px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #696969;
+border-top: none;
+border-left: none;
+border-right:none;
+display: flex;
+justify-content: start;
+}
+.NEW{
+	width: fit-content;
+	height: fit-content;
+	background-color: #10A8EE;
+	border-radius: 50px;
+	font-size: 9px;
+	padding: 2px;
+}
+
+/* Rererences-Button Fifth Line */
+/* REFERENCES-BUTTON FIFTH LINE */
+.Rererences_Button4{
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: block;
+padding-left: 10px;
+/* margin: 0 auto; */
+}
+.dropAndDown4{
+background-color: #1B1B1B;
+width: 96%;
+height: fit-content;
+color: white;
+display: inline-block;
+font-size: 18px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #696969;
+border-top: none;
+border-left: none;
+border-right:none;
+display: flex;
+justify-content: start;
+}
+
+/* Rererences-Button Sixth Line */
+/* REFERENCES-BUTTON SIXTH LINE */
+.Rererences_Button5{
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: block;
+padding-left: 10px;
+/* margin: 0 auto; */
+}
+.dropAndDown5{
+background-color: #1B1B1B;
+width: 96%;
+height: fit-content;
+color: white;
+display: inline-block;
+font-size: 18px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #696969;
+border-top: none;
+border-left: none;
+border-right:none;
+display: flex;
+justify-content: start;
+}
+.List_menu5{
+width: 95%;
+height: fit-content;
+/* background-color: red; */
+margin: 0 auto;
+}
+.List_menu5 a{
+margin-top: 7px;
+padding-left: 15px;
+}
+.List_menu5 .Overview5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .Overview5:hover{
+background-color: #696969;
+}
+.List_menu5 .Overview5::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #F2F2F2;
+}
+.List_menu5 .HTML5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .HTML5::after{
+content: '';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 2px;
+height: 100%;
+background-color:#F06978 ;
+}
+.List_menu5 .HTML5:hover{
+background-color: #696969;
+}
+.List_menu5 .CSS5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .CSS5::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #83A8EE;
+}
+.List_menu5 .CSS5:hover{
+background-color: #696969;
+}
+.List_menu5 .JavaScript5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .JavaScript5::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #A49700;
+}
+.List_menu5 .JavaScript5:hover{
+background-color: #696969;
+}
+.List_menu5 .HTTP5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .HTTP5::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color:#00A94E ;
+}
+.List_menu5 .HTTP5:hover{
+background-color: #696969;
+}
+.List_menu5 .Web_APls5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .Web_APls5::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color:#969696;
+}
+.List_menu5 .Web_APls5:hover{
+background-color: #696969;
+}
+.List_menu5 .Web_Wxtensions5{
+position: relative;
+padding: 7px 7px 7px 7px;
+}
+.List_menu5 .Web_Wxtensions5::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 2px;
+height: 100%;
+background-color: #F6F6F6;
+}
+.List_menu5 .Web_Wxtensions5:hover{
+background-color: #696969;
+}
+.floot_right5{
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: end;
+margin-top: 4px;
+}
+.chid_arrow5{
+border: solid white;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 3px;
+transform: rotate(45deg);
+transition: transform 0.3s;
+margin-left: 78%;
+margin-top: 2px;
+}
+.chid_arrow5.ChidUp5 {
+transform: rotate(-135deg);
+}
+#List_menu5{
+display: none;
+}
+#List_menu5.ChidShow5{
+display: block;
+}
+
+/* #Start Content With Img */
+/* #START CONTENT WITH IMG */
+.contentside{
+width: 100%;
+height: fit-content;
+position: relative;
+background-color: black;
+}
+.contentside img{
+width: 100%;
+height: 350px;
+object-fit: cover;
+margin-top: 40px;
+opacity: 0.4;
+}
+.contentside p{
+padding: 0;
+margin: 0;
+font-size: 42px;
+position: absolute;
+top: 45px;
+left: 10px;
+line-height: 50px;
+color: white;
+}
+.contentside a{
+	color:white;
+	text-decoration: underline;
+    text-decoration-color: rgb(25, 106, 237);
+}
+.contentside .chil_p{
+font-size: 18px;
+font-weight: bold;
+top: 210px;
+left: 10px;
+line-height: 30px;
+color: white;
+}
+.contentside .chil_p a{
+font-size: 18px;
+text-decoration: none;
+color: white;
+}
+/* #Start Content With Img And search_icon */
+/* #START CONTENT WITH IMG AND SEARCH_ICON */
+.contentside .search_bar1{
+position: absolute;
+top: 300px;
+width: 100%;
+height: fit-content;
+/* background-color: red; */
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+.contentside .search_bar1 input{
+width: 350px;
+height: 45px;
+border-radius: 50px;
+outline: none;
+border: 1px solid rgb(32, 32, 32);
+padding-right: 30px;
+background-color:#434242;
+color: #F2F2F2;
+padding-left: 15px;
+}
+.contentside .search_bar1 input::placeholder{
+color:#F2F2F2;
+}
+.contentside .search_bar1 .secont_icon{
+position: relative;
+top: 0;
+left: 0;
+margin-left: -27px;
+margin-top: 14px;
+color:#F2F2F2;
+}
+}
+
+/* #Start Content1 Blog1 With Head_line */
+/* #START CONTENT1 BLOG1 WITH HEAD_LINE */
+@media screen and (max-width:768px) {
+.start_content1{
+	width: 100%;
+	height: fit-content;
+	/* background-color: red; */
+	box-sizing: border-box;
+}
+.start_content1 .Head_Line{
+	font-size: 22px;
+	padding-left: 10px;
+}
+.start_content1 .Blog1{
+	width: 95%;
+	height: fit-content;
+	background-color: white;
+	border: 1px solid rgb(87, 87, 87);
+	padding-left: 10px;
+	margin: 0 auto;
+	border-radius: 7px;
+	margin-top: 20px;
+}
+.start_content1 .Blog1 h3{
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+}
+.start_content1 .Blog1 a{
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+.start_content1 .Blog1 a:hover{
+	text-decoration: underline;
+}
+
+/* #Start Content1 Blog2 */
+/* #START CONTENT1 BLOG2 */
+.start_content1 .Blog2{
+	width: 95%;
+	height: fit-content;
+	background-color: white;
+	border: 1px solid rgb(87, 87, 87);
+	padding-left: 10px;
+	margin: 0 auto;
+	border-radius: 7px;
+	margin-top: 20px;
+}
+.start_content1 .Blog2 h3{
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+}
+.start_content1 .Blog2 a{
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+.start_content1 .Blog2 a:hover{
+	text-decoration: underline;
+}
+
+/* #Start Content1 Blog3 */
+/* #START CONTENT1 BLOG3 */
+.start_content1 .Blog3{
+	width: 95%;
+	height: fit-content;
+	background-color: white;
+	border: 1px solid rgb(87, 87, 87);
+	padding-left: 10px;
+	margin: 0 auto;
+	border-radius: 7px;
+	margin-top: 20px;
+}
+.start_content1 .Blog3 h3{
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+}
+.start_content1 .Blog3 a{
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+.start_content1 .Blog3 a:hover{
+	text-decoration: underline;
+}
+
+/* #Start Content1 Blog4 */
+/* #START CONTENT1 BLOG4 */
+.start_content1 .Blog4{
+	width: 95%;
+	height: fit-content;
+	background-color: white;
+	border: 1px solid rgb(87, 87, 87);
+	padding-left: 10px;
+	margin: 0 auto;
+	border-radius: 7px;
+	margin-top: 20px;
+}
+.start_content1 .Blog4 .Web_Apis{
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+	font-size: 18px;
+	display: block;
+	font-weight: bold;
+}
+.start_content1 .Blog4 a{
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+.start_content1 .Blog4 a:hover{
+	text-decoration: underline;
+}
+
+/* After Content1 Head_Line With Post1 */
+/* AFTER CONTENT1 HEAD_LINE WITH POST1 */
+.start_content1 .After_Head_Line{
+	padding-left: 10px;
+}
+.start_content1 .post1{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.start_content1 .post1 .post1_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .post1 .post1_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .post1 .post1_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .post1 .post1_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .post1 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Post2 */
+/* AFTER CONTENT1 POST2 */
+.start_content1 .post2{
+	width: 95%;
+	height: fit-content;
+	/* background-color: #F9F9FB; */
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+.start_content1 .post2 .post2_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .post2 .post2_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .post2 .post2_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .post2 .post2_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .post2 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Post3 */
+/* AFTER CONTENT1 POST3 */
+.start_content1 .post3{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+.start_content1 .post3 .post3_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .post3 .post3_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .post3 .post3_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .post3 .post3_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .post3 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/* After Content1 Command1 With Head_Line */
+/* AFTER CONTENT1 COMMENT1 WITH HEAD_LINE */
+.start_content1 .After_Command1_Head_Line{
+	padding-left: 10px;
+}
+.start_content1 .Command1{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.start_content1 .Command1 .Command1_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command1 .Command1_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command1 .Command1_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command1 .Command1_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command1 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Command2 */
+/* AFTER CONTENT1 COMMENT2 */
+.start_content1 .Command2{
+	width: 95%;
+	height: fit-content;
+	/* background-color: #F9F9FB; */
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command2 .Command2_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command2 .Command2_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command2 .Command2_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command2 .Command2_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command2 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Command3 */
+/* AFTER CONTENT1 COMMENT3 */
+.start_content1 .Command3{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command3 .Command3_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command3 .Command3_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command3 .Command3_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command3 .Command3_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command3 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/* After Content1 Command4 */
+/* AFTER CONTENT1 COMMENT4 */
+.start_content1 .Command4{
+	width: 95%;
+	height: fit-content;
+	/* background-color: #F9F9FB; */
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command4 .Command4_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command4 .Command4_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command4 .Command4_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command4 .Command4_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command4 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Command5 */
+/* AFTER CONTENT1 COMMENT5 */
+.start_content1 .Command5{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command5 .Command5_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command5 .Command5_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command5 .Command5_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command5 .Command5_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command5 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/* After Content1 Command6 */
+/* AFTER CONTENT1 COMMENT6 */
+.start_content1 .Command6{
+	width: 95%;
+	height: fit-content;
+	/* background-color: #F9F9FB; */
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command6 .Command6_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command6 .Command6_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command6 .Command6_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command6 .Command6_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command6 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/* After Content1 Command7 */
+/* AFTER CONTENT1 COMMENT7 */
+.start_content1 .Command7{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command7 .Command7_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command7 .Command7_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command7 .Command7_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command7 .Command7_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command7 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Command8 */
+/* AFTER CONTENT1 COMMENT8 */
+.start_content1 .Command8{
+	width: 95%;
+	height: fit-content;
+	/* background-color: #F9F9FB; */
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command8 .Command8_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command8 .Command8_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command8 .Command8_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command8 .Command8_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command8 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Command9 */
+/* AFTER CONTENT1 COMMENT9 */
+.start_content1 .Command9{
+	width: 95%;
+	height: fit-content;
+	background-color: #F9F9FB;
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command9 .Command9_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command9 .Command9_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command9 .Command9_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command9 .Command9_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command9 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* After Content1 Command10 */
+/* AFTER CONTENT1 COMMENT10 */
+.start_content1 .Command10{
+	width: 95%;
+	height: fit-content;
+	/* background-color: #F9F9FB; */
+	margin: 0 auto;
+	border-radius: 4px;
+	display: block;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+.start_content1 .Command10 .Command10_a{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+.start_content1 .Command10 .Command10_a:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command10 .Command10_a1{
+	color: black;
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+}
+.start_content1 .Command10 .Command10_a1:hover{
+	text-decoration: underline;
+}
+.start_content1 .Command10 p{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Footer Img And Others */
+/* FOOTER IMG AND OTHERS */
+.Footer_Img_Others{
+	width: 100%;
+	height: fit-content;
+	background-color: rgb(0, 0, 0);
+}
+.Footer_Img_Others img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	opacity: 0.2;
+}
+.Footer_Img_Others .Text_And_Logo{
+	width: 100%;
+	height: fit-content;
+	/* background-color: #00A94E; */
+	position: relative;
+	/* top: 157em;
+	left: 0; */
+	margin-top: -30em;
+	display: block;
+	justify-content: center;
+}
+.Footer_Img_Others .Text_And_Logo h3{
+    color: white;
+	text-align: center;
+}
+.Footer_Img_Others .Text_And_Logo .As_btn{
+width: 100%;
+height: fit-content;
+/* background-color: #10A8EE; */
+text-align: center;
+}
+.Footer_Img_Others .Text_And_Logo .As_button{
+width: 100%;
+height: fit-content;
+background-color: white;
+color: black;
+text-decoration: none;
+font-size: 22px;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 5px;
+}
+.Footer_Img_Others .Text_And_Logo .As_button:hover{
+	text-decoration: underline;
+}
+.Footer_Img_Others .Text_And_Logo p{
+	width: 80%;
+	height: fit-content;
+	display: flex;
+	margin: 0 auto;
+	color: white;
+	margin-top: 30px;
+}
+.Footer_Img_Others .Text_And_Logo .As_a{
+width: 100%;
+height: fit-content;
+/* background-color:red; */
+display: flex;
+justify-content: center;
+text-decoration: none;
+color: white;
+font-size: 18px;
+margin-top: 40px;
+}
+.Footer_Img_Others .Text_And_Logo .As_a:hover{
+	text-decoration: underline;
+	text-decoration-color: rosybrown;
+}
+.Footer_Img_Others .Text_And_Logo .mdnImg{
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+.Footer_Img_Others .Text_And_Logo img{
+width: 35%;
+height: auto;
+opacity: 0.9;
+}
+
+/* Footer Bottom And Others */
+/* FOOTER BUTTOM AND OTHERS */
+.Footer_Bottom{
+	width: 100%;
+	height: fit-content;
+	background-color:white;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.Footer_Bottom .Svg_control{
+
+}
+.Footer_Bottom h3{
+	width: 50%;
+	height: fit-content;
+	/* background-color: #00A94E; */
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+.Footer_Bottom .Image_stote{
+width: 300px;
+height: fit-content;
+margin-top: 35px;
+/* background-color: #00A94E; */
+margin-bottom: 40px;
+}
+.Footer_Bottom .Image_stote i{
+	font-size: 26px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.material-symbols-outlined{
+	font-size: 22px;
+	user-select: none;
+	cursor: pointer;
+}
+
+/* Head Of Two Dive */
+/* HEAD OF TWO DIVE */
+.DIV_4STEP{
+width: 100%;
+height: fit-content;
+/* background-color: #00A94E; */
+display: inline-block;
+}
+/* .Footer_Bottom .div4_1 */
+/* .FOOTER_BOTTOM .DIV4_1 */
+.Footer_Bottom .div4_1{
+	width: 40%;
+	height: fit-content;
+	/* background-color: red; */
+    display: inline-block;
+}
+.Footer_Bottom .div4_1 span{
+display: block;
+}
+.Footer_Bottom .div4_1 a{
+display: block;
+text-decoration: none;
+margin-top: 10px;
+color: black;
+}
+/* .Footer_Bottom .div4_2 */
+/* .FOOTER_BOTTOM .DIV4_2 */
+.Footer_Bottom .div4_2{
+	width: 40%;
+	height: fit-content;
+	/* background-color: red; */
+    display: inline-block;
+	margin-left: 40px;
+	position: absolute;
+}
+.Footer_Bottom .div4_2 span{
+display: block;
+}
+.Footer_Bottom .div4_2 a{
+display: block;
+text-decoration: none;
+margin-top: 10px;
+color: black;
+}
+
+/* Head Of Two Dive */
+/* HEAD OF TWO DIVE */
+.DIV_4STEP1{
+width: 100%;
+height: fit-content;
+/* background-color: #3dea8d; */
+display: inline-block;
+margin-top: 40PX;
+}
+
+/* .Footer_Bottom .div4_3 */
+/* .FOOTER_BOTTOM .DIV4_3 */
+.Footer_Bottom .div4_3{
+	width: 40%;
+	height: fit-content;
+	/* background-color: red; */
+    display: inline-block;
+}
+.Footer_Bottom .div4_3 span{
+display: block;
+}
+.Footer_Bottom .div4_3 a{
+display: block;
+text-decoration: none;
+margin-top: 10px;
+color: black;
+}
+
+/* .Footer_Bottom .div4_4 */
+/* .FOOTER_BOTTOM .DIV4_4 */
+.Footer_Bottom .div4_4{
+	width: 40%;
+	height: fit-content;
+	/* background-color: red; */
+    display: inline-block;
+	margin-left: 40px;
+	box-sizing: border-box;
+	position: absolute;
+}
+.Footer_Bottom .div4_4 span{
+display: block;
+}
+.Footer_Bottom .div4_4 a{
+display: block;
+text-decoration: none;
+margin-top: 10px;
+color: black;
+}
+
+/* Footer Bottom End And Others */
+/* FOOTER BUTTOM END AND OTHERS */
+.line_footer{
+	width: 100%;
+	height: 1px;
+	margin-top: 60px;
+	background-color: black;
+}
+.Footer_Bottom_Others{
+	width: 100%;
+	height: fit-content;
+	/* background-color: firebrick; */
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding-bottom: 60px;
+}
+.Footer_Bottom_Others img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.Footer_Bottom_Others a{
+	font-size: 14px;
+	font-weight: 22;
+	color: #707070;
+	text-decoration: underline;
+	text-decoration-thickness: 0.5px;
+}
+.Footer_Bottom_Others p{
+color:7px;
+font-weight: 22;
+}
+}
+</style>
+</head>
+<body>
+	<nav>
+
+<!-- ShowAndUpDiv -->
+<!-- SHOWANDUPDIV -->
+<span id="OpenSideMenu" class="Openside" onclick="OpensideBar()"><i class="ri-align-justify"></i></span>
+<ul id="SideMenu" class="SidebarMenu">
+<a href="#" class="sideBar" onclick="SideBar_list()"><i class="ri-close-line"></i></a>
+
+<!-- drop and down  -->
+<!-- DROP AND DOWN -->
+<div class="ShowAndUpDiv">
+				<button class="hupe_mune" onclick="hupe_mune()">
+					<i class="ri-contrast-2-fill"></i>
+					Theme
+					<span class="arrow"></span>
+				</button>
+				<div id="menu_list" class="menu_list">
+					<a href="#"><i class="ri-contrast-2-fill"></i>OS Default</a>
+					<a href="#"><i class="ri-sun-fill"></i>Light</a>
+					<a href="#"><i class="ri-moon-fill"></i>Dark</a>
+				</div>
+</div>
+
+<!-- log in and button -->
+<!-- LOG IN AND BUTTON -->
+<div class="loginAndButton">
+			<a href="#">Log in</a>
+			<button>Sign up for free</button>
+</div>
+
+<!-- search bar -->
+<!-- SEARCH BAR -->
+ <div class="searchBar">
+	<input type="search" placeholder="_">
+	<i class="ri-search-line"></i>
+ </div> 
+
+<!-- Rererences-Button -->
+<!-- REFERENCES-BUTTON -->
+<div class="Rererences_Button">
+	<button class="dropAndDown" onclick="dropAndDown()">References
+		<div class="floot_right"><span class="chid_arrow"></span></div>
+	</button>
+	<div id="List_menu" class="List_menu">
+		<a href="#" class="Overview">Overview/Web Technology</a>
+		<a href="#" class="HTML">HTML</a>
+		<a href="#" class="CSS">CSS</a>
+		<a href="#" class="JavaScript">JavaScript</a>
+		<a href="#" class="HTTP">HTTP</a>
+		<a href="#" class="Web_APls">Web APls</a>
+		<a href="#" class="Web_Wxtensions">Web Extensions</a>
+	</div>
+</div>
+
+<!-- Rererences-Button Second Line -->
+<!-- REFERENCES-BUTTON SECOND LINE -->
+<div class="Rererences_Button1">
+	<button class= "dropAndDown1" onclick="dropAndDown1()">Guides
+		<div class="floot_right1"><span class="chid_arrow1"></span></div>
+	</button>
+	<div id="List_menu1" class="List_menu1">
+		<a href="#" class="Overview1">Overview / MDN Learnig Area</a>
+		<a href="#" class="HTML1">HTML</a>
+		<a href="#" class="CSS1">CSS</a>
+		<a href="#" class="JavaScript1">JavaScript</a>
+		<a href="#" class="HTTP1">Accessibility</a>
+	</div>
+</div>
+
+<!-- Rererences-Button Thirt Line -->
+<!-- REFERENCES-BUTTON THIRT LINE -->
+<div class="Rererences_Button2">
+	<button class= "dropAndDown2" onclick="dropAndDown2()">Plus
+		<div class="floot_right2"><span class="chid_arrow2"></span></div>
+	</button>
+	<div id="List_menu2" class="List_menu2">
+		<a href="#" class="Overview2">Overview</a>
+		<a href="#" class="HTML2">Al Help</a>
+		<a href="#" class="CSS2">Updates</a>
+		<a href="#" class="JavaScript2">Documentation</a>
+		<a href="#" class="HTTP2">FAQ</a>
+	</div>
+</div>
+
+<!-- Rererences-Button Fourth Line -->
+<!-- REFERENCES-BUTTON FOURTH LINE -->
+<div class="Rererences_Button3">
+<button class= "dropAndDown3">Curriculum
+	<div class="NEW">NEW</div>
+</button>
+</div>
+
+<!-- Rererences-Button Fifth Line -->
+<!-- REFERENCES-BUTTON FIFTH LINE -->
+<div class="Rererences_Button4">
+	<button class= "dropAndDown4">Blog</button>
+	</div>
+
+<!-- Rererences-Button Sixth Line -->
+<!-- REFERENCES-BUTTON SIXTH LINE -->
+<div class="Rererences_Button5">
+	<button class="dropAndDown5" onclick="dropAndDown5()">Tools
+		<div class="floot_right5"><span class="chid_arrow5"></span></div>
+	</button>
+	<div id="List_menu5" class="List_menu5">
+		<a href="#" class="Overview5">Playground</a>
+		<a href="#" class="HTML5">HTTP Observatory</a>
+	</div>
+</div>
+</ul>
+	</nav>
+
+<!-- #Start Content With Img -->
+<!-- #START CONTENT WITH IMG -->
+	<div class="contentside">
+		<img src="./images/px.jpg" alt="My Image">" alt="img">
+		<p>Resources for <br><a href="#">Developers,</a>
+			<br>by Developers_</p>
+			<p class="chil_p">Documenting web technologies, including <a href="#">CSS, HTML,</a> and <a href="#">JavaScript,</a> since 2005.</p>
+			
+<!-- #Start Content With Img And search_icon -->
+<!-- #START CONTENT WITH IMG AND SEARCH_ICON -->
+			<div class="search_bar1">
+			<input type="search">
+			<i class="secont_icon ri-search-line"></i>
+		</div>
+	</div>
+
+<!-- #Start Content1 Blog1 With Head_line -->
+<!-- #START CONTENT1 BLOG1 WITH HEAD_LINE-->
+    <div class="start_content1">
+		<div class="Head_Line">Featured articles</div>
+		<div class="Blog1">
+			<h3>Blog</h3>
+			<a href="#">MDN partners with Scrimba to enhance web development learning</a>
+			<p>We have chosen Scrimba as a course partner for the MDN Curriculum. This blog post explores what the partnership means practically, and how we will provide an even better web education experience together.</p>
+		</div>
+
+<!-- #Start Content1 Blog2 -->
+<!-- #START CONTENT1 BLOG2 -->
+		<div class="Blog2">
+			<h3>Blog</h3>
+			<a href="#">Developer essentials: JavaScript console methods</a>
+			<p>The JavaScript console is an essential tool for web development. Learn new and fun ways to use the console to display data and debug your code.</p>
+		</div>
+<!-- #Start Content1 Blog3 -->
+<!-- #START CONTENT1 BLOG3 -->
+        <div class="Blog3">
+			<h3>Blog</h3>
+			<a href="#">Introduction to web sustainability</a>
+			<p>What can web designers and developers do to build a more sustainable web? This post explores the environmental impacts of web technologies and looks at some of the ways we can build greener websites.</p>
+		</div>
+<!-- #Start Content1 Blog4 -->
+<!-- #START CONTENT1 BLOG4 -->
+         <div class="Blog4">
+			<a href="#" class="Web_Apis">Web APIs</a>
+			<a href="#">Introduction to web sustainability</a>
+			<p>What can web designers and developers do to build a more sustainable web? This post explores the environmental impacts of web technologies and looks at some of the ways we can build greener websites.</p>
+		</div>
+
+<!-- After Content1 Head_Line With Post1 -->
+<!-- AFTER CONTENT1 HEAD_LINE WITH POST1 -->
+         <div class="After_Head_Line">
+			<h3>Latest news</h3>
+		 </div>
+		 <div class="post1">
+			<a href="#" class="post1_a">MDN partners with Scrimba to enhance web development learning</a>
+			<a href="#" class="post1_a1">developer.mozilla.org</a>
+			<p>3 months ago</p>
+		 </div>
+<!-- After Content1 Post2 -->
+<!-- AFTER CONTENT1 POST2 -->
+         <div class="post2">
+			<a href="#" class="post2_a">Introducing the MDN HTTP Observatory</a>
+			<a href="#" class="post2_a">developer.mozilla.org</a>
+			<p>3 months ago</p>
+		 </div>
+
+<!-- After Content1 Post3 -->
+<!-- AFTER CONTENT1 POST3 -->
+          <div class="post3">
+			<a href="#" class="post3_a">Lift-off: The MDN Curriculum launch</a>
+			<a href="#" class="post3_a">developer.mozilla.org</a>
+			<p>8 months ago</p>
+		 </div>
+<!-- After Content1 Command1 With Head_Line -->
+<!-- AFTER CONTENT1 COMMENT1 WITH HEAD_LINE -->
+               <div class="After_Command1_Head_Line">
+			<h3>Recent contributions</h3>
+		 </div>
+		 <div class="Command1">
+			<a href="#" class="Command1_a">Change use of "standard scripts" to "classic scripts"</a>
+			<a href="#" class="Command1_a1">mdn/content</a>
+			<p>7 hours ago</p>
+		 </div>
+<!-- After Content1 Command2   -->
+<!-- AFTER CONTENT1 COMMENT2  -->
+   <div class="Command2">
+			<a href="#" class="Command2_a">Update MPEG-2 Licensing - remove the Philippines.</a>
+			<a href="#" class="Command2_a">mdn/content</a>
+			<p>8 hours ago</p>
+		 </div>
+<!-- After Content1 Command3 -->
+<!-- AFTER CONTENT1 COMMENT3 -->
+  <div class="Command3">
+			<a href="#" class="Command3_a">FF132 fetchpriority docs updates</a>
+			<a href="#" class="Command3_a">mdn/content</a>
+			<p>mdn/content</p>
+		 </div>
+<!-- After Content1 Command4 -->
+<!-- AFTER CONTENT1 COMMENT4 -->
+  <div class="Command4">
+			<a href="#" class="Command4_a">Content-Security-Policy `report-to` update csp level</a>
+			<a href="#" class="Command4_a">mdn/content</a>
+			<p>9 months ago</p>
+		 </div>
+<!-- After Content1 Command5 -->
+<!-- AFTER CONTENT1 COMMENT5 -->
+  <div class="Command5">
+			<a href="#" class="Command5_a">es: Create contructor Date()</a>
+			<a href="#" class="Command5_a">mdn/translated-content</a>
+			<p>13 months ago</p>
+		 </div>
+<!-- After Content1 Command6 -->
+<!-- AFTER CONTENT1 COMMENT6 -->
+  <div class="Command6">
+			<a href="#" class="Command6_a">Fix #23947</a>
+			<a href="#" class="Command6_a">mdn/translated-content</a>
+			<p>14 hours ago</p>
+		 </div>
+<!-- After Content1 Command7 -->
+<!-- AFTER CONTENT1 COMMENT7 -->
+  <div class="Command7">
+			<a href="#" class="Command7_a">Fix #23258</a>
+			<a href="#" class="Command7_a">mdn/translated-content</a>
+			<p>14 hours ago</p>
+		 </div>
+<!-- After Content1 Command8 -->
+<!-- AFTER CONTENT1 COMMENT8 -->
+  <div class="Command8">
+			<a href="#" class="Command8_a">Bump @mdn/yari from 2.64.1 to 2.64.2</a>
+			<a href="#" class="Command8_a">mdn/content</a>
+			<p>16 hours ago</p>
+		 </div>
+<!-- After Content1 Command9 -->
+<!-- AFTER CONTENT1 COMMENT9 -->
+  <div class="Command9">
+			<a href="#" class="Command9_a">fr: switch to 1990 spelling in webextension i18n doc</a>
+			<a href="#" class="Command9_a">mdn/translated-content</a>
+			<p>16 hours ago</p>
+		 </div>
+<!-- After Content1 Command10 -->
+<!-- AFTER CONTENT1 COMMENT10 -->
+   <div class="Command10">
+			<a href="#" class="Command10_a">Improve translation: Using "кусок" instead of "бит" in some contexts</a>
+			<a href="#" class="Command10_a">mdn/translated-content</a>
+			<p>17 hours ago</p>
+		 </div>
+	</div>
+
+<!-- Footer Img And Others -->
+<!-- FOOTER IMG AND OTHERS -->
+	<div class="Footer_Img_Others">
+	<img src="./images/from ws.jpg" alt="img">
+	<div class="Text_And_Logo">
+		<h3>Contributor Spotlight</h3>
+		<div class="As_btn"><a href="#" class="As_button">HoChan Lee</a></div>
+		<p><i>MDN is a large, open community where everyone is welcome. It offers a great opportunity to organize thoughts through writing, while sharing and expanding knowledge by engaging with a diverse group of people throughout the contribution process.</i></p>
+		<a href="#" class="As_a">Get involved →</a>
+		<div class="mdnImg"><img src="./images/mdn.png" alt="img"></div>
+	</div>
+	</div>
+
+<!-- Footer Bottom And Others -->
+<!-- FOOTER BUTTOM AND OTHERS -->
+<div class="Footer_Bottom">
+<svg class="Svg_control" width="48" height="17" viewBox="0 0 48 17" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="mdn-footer-logo-svg">MDN logo</title><path d="M20.04 16.512H15.504V10.416C15.504 9.488 15.344 8.824 15.024 8.424C14.72 8.024 14.264 7.824 13.656 7.824C12.92 7.824 12.384 8.064 12.048 8.544C11.728 9.024 11.568 9.64 11.568 10.392V14.184H13.008V16.512H8.472V10.416C8.472 9.488 8.312 8.824 7.992 8.424C7.688 8.024 7.232 7.824 6.624 7.824C5.872 7.824 5.336 8.064 5.016 8.544C4.696 9.024 4.536 9.64 4.536 10.392V14.184H6.6V16.512H0V14.184H1.44V8.04H0.024V5.688H4.536V7.32C5.224 6.088 6.32 5.472 7.824 5.472C8.608 5.472 9.328 5.664 9.984 6.048C10.64 6.432 11.096 7.016 11.352 7.8C11.992 6.248 13.168 5.472 14.88 5.472C15.856 5.472 16.72 5.776 17.472 6.384C18.224 6.992 18.6 7.936 18.6 9.216V14.184H20.04V16.512Z" fill="currentColor"></path><path d="M33.6714 16.512H29.1354V14.496C28.8314 15.12 28.3834 15.656 27.7914 16.104C27.1994 16.536 26.4154 16.752 25.4394 16.752C24.0154 16.752 22.8954 16.264 22.0794 15.288C21.2634 14.312 20.8554 12.984 20.8554 11.304C20.8554 9.688 21.2554 8.312 22.0554 7.176C22.8554 6.04 24.0634 5.472 25.6794 5.472C26.5594 5.472 27.2794 5.648 27.8394 6C28.3994 6.352 28.8314 6.8 29.1354 7.344V2.352H26.9754V0H32.2314V14.184H33.6714V16.512ZM29.1354 11.04V10.776C29.1354 9.88 28.8954 9.184 28.4154 8.688C27.9514 8.176 27.3674 7.92 26.6634 7.92C25.9754 7.92 25.3674 8.176 24.8394 8.688C24.3274 9.2 24.0714 10.008 24.0714 11.112C24.0714 12.152 24.3114 12.944 24.7914 13.488C25.2714 14.032 25.8394 14.304 26.4954 14.304C27.3114 14.304 27.9514 13.96 28.4154 13.272C28.8954 12.584 29.1354 11.84 29.1354 11.04Z" fill="currentColor"></path><path d="M47.9589 16.512H41.9829V14.184H43.4229V10.416C43.4229 9.488 43.2629 8.824 42.9429 8.424C42.6389 8.024 42.1829 7.824 41.5749 7.824C40.8389 7.824 40.2709 8.056 39.8709 8.52C39.4709 8.968 39.2629 9.56 39.2469 10.296V14.184H40.6869V16.512H34.7109V14.184H36.1509V8.04H34.5909V5.688H39.2469V7.344C39.9669 6.096 41.1269 5.472 42.7269 5.472C43.7509 5.472 44.6389 5.776 45.3909 6.384C46.1429 6.992 46.5189 7.936 46.5189 9.216V14.184H47.9589V16.512Z" fill="currentColor"></path></svg>
+<h3>Your blueprint for a better internet.</h3>
+
+<div class="Image_stote">
+	<i class="ri-mastodon-fill"></i>
+	<i class="ri-twitter-x-line"></i>
+	<i class="ri-github-fill"></i>
+	<span class="material-symbols-outlined">
+	rss_feed
+	</span>
+</div>
+<div class="DIV_4STEP">
+<div class="div4_1">
+	<span>MDN</span>
+	<a href="#">About</a>
+	<a href="#">Blog</a>
+	<a href="#">Careers</a>
+	<a href="#">Advertise with us</a>
+</div>
+<div class="div4_2">
+	<span>Support</span>
+	<a href="#">Product help</a>
+	<a href="#">Report an issue</a>
+</div>
+</div>
+<div class="DIV_4STEP1">
+<div class="div4_3">
+	<span>Our communities</span>
+	<a href="#">MDN Community</a>
+	<a href="#">MDN Forum</a>
+	<a href="#">MDN Chat</a>
+</div>
+<div class="div4_4">
+	<span>Developers</span>
+	<a href="#">Web Technologies</a>
+	<a href="#">Learn Web Development</a>
+	<a href="#">MDN Plus</a>
+	<a href="#">Hacks Blog</a>
+</div>
+</div>
+</div>
+<!-- Footer Bottom End And Others -->
+<!-- FOOTER BUTTOM END AND OTHERS -->
+<div class="line_footer"></div>
+<div class="Footer_Bottom_Others">
+	<img src="./images/logo-word-hor.e20791bb4dd4.png" alt="img" width="100px"><br>
+	<a href="#">Website Privacy Notice</a>
+	<a href="#">Cookies</a>
+	<a href="#">Legal</a>
+	<a href="#">Community Participation Guidelines</a>
+	<p>Visit <a href="#">Mozilla Corporation’s</a> not-for-profit parent, the <a href="#">Mozilla Foundation.</a>Portions of this content are ©1998–2024 by individual mozilla.org contributors. Content available under a Creative Commons license.</p>
+</div>
+
+
+
+
+
+<!-- <script></script> -->
+<!-- <SCRIPT></SCRIPT> -->
+<script>
+
+// ShowAndUpDiv 
+// SHOWANDUPDIV 
+	function OpensideBar(){
+		document.getElementById("SideMenu").classList.add("active");
+		document.getElementById("OpenSideMenu").classList.add("hide");
+	}
+	function SideBar_list(){
+		document.getElementById("SideMenu").classList.remove("active");
+		document.getElementById("OpenSideMenu").classList.remove("hide");
+	}
+
+// drop and down 
+// DROP AND DOWN
+	function hupe_mune(){
+		const menu_list=document.getElementById("menu_list");
+		const arrow=document.querySelector(".arrow");
+		menu_list.classList.toggle("show");
+		arrow.classList.toggle("hide");
+	}
+
+// Rererences-Button
+// REFERENCES-BUTTON
+        function dropAndDown(){
+			const List_menu=document.getElementById("List_menu");
+			const chid_arrow=document.querySelector(".chid_arrow");
+
+			List_menu.classList.toggle("ChidShow");
+			chid_arrow.classList.toggle("ChidUp");
+		}
+
+// Rererences-Button Secend Line
+// REFERENCES-BUTTON SECEND LINE
+function dropAndDown1(){
+			const List_menu1=document.getElementById("List_menu1");
+			const chid_arrow1=document.querySelector(".chid_arrow1");
+
+			List_menu1.classList.toggle("ChidShow1");
+			chid_arrow1.classList.toggle("ChidUp1");
+		}
+
+// Rererences-Button Thirt Line
+// REFERENCES-BUTTON THIRT LINE
+function dropAndDown2(){
+			const List_menu2=document.getElementById("List_menu2");
+			const chid_arrow2=document.querySelector(".chid_arrow2");
+
+			List_menu2.classList.toggle("ChidShow2");
+			chid_arrow2.classList.toggle("ChidUp2");
+		}
+
+// Rererences-Button Fourth Line
+// REFERENCES-BUTTON FOURTH LINE
+// ↯
+// Rererences-Button Fifth Line
+// REFERENCES-BUTTON FIFTH LINE
+// ↯
+// Rererences-Button Sixth Line
+// REFERENCES-BUTTON SIXTH LINE
+function dropAndDown5(){
+			const List_menu5=document.getElementById("List_menu5");
+			const chid_arrow5=document.querySelector(".chid_arrow5");
+
+			List_menu5.classList.toggle("ChidShow5");
+			chid_arrow5.classList.toggle("ChidUp5");
+		}
+</script>
+</body>
+</html>
